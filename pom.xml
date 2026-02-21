@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>io.github.yourusername</groupId>
+  <artifactId>normalize-spring-boot-starter</artifactId>
+  <version>1.0.0</version>
+  <packaging>jar</packaging>
+
+  <name>normalize.Normalize Spring Boot Starter</name>
+  <description>Automatic String normalization via @normalize.Normalize</description>
+  <url>https://github.com/yourusername/normalize</url>
+
+  <properties>
+    <java.version>17</java.version>
+    <spring.boot.version>3.2.5</spring.boot.version>
+    <jackson.version>2.17.0</jackson.version>
+    <maven.compiler.source>${java.version}</maven.compiler.source>
+    <maven.compiler.target>${java.version}</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>${jackson.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-autoconfigure</artifactId>
+      <version>${spring.boot.version}</version>
+    </dependency>
+  </dependencies>
+</project>
